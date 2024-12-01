@@ -1,0 +1,833 @@
+body {
+  background-color: #d8d8d8;
+  overflow-x: hidden;
+}
+header {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu {
+  height: 30px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: -20px;
+}
+
+.busca {
+  width: 650px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid rgb(46, 45, 45);
+  display: flex;
+}
+.lupa {
+  height: 40px;
+  margin-right: 20px;
+}
+.busca input {
+  width: 550px;
+  border: none;
+  font-size: 20px;
+}
+.busca input:focus {
+  outline: none;
+}
+.like {
+  height: 30px;
+  cursor: pointer;
+  margin-right: -30px;
+  margin-left: 40px;
+  border: 1px solid #c3d4e9;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+.notif {
+  height: 30px;
+  cursor: pointer;
+  margin-right: -30px;
+  border: 1px solid #c3d4e9;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+.config {
+  height: 35px;
+  cursor: pointer;
+  margin-right: -30px;
+  border: 1px solid #c3d4e9;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.perfil {
+  height: 60px;
+  cursor: pointer;
+}
+
+.proximosEventos {
+  margin-top: 40px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Titulo {
+  font-size: 45px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #3563e9;
+  margin-left: 40px;
+  font-weight: 650;
+}
+
+.botoes {
+  margin-right: 120px;
+}
+
+.bt {
+  height: 50px;
+  width: 80px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #3563e9;
+  border: none;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 26px;
+}
+
+.bt:hover {
+  background-color: #ffffff;
+  color: #3563e9;
+  border: 3px solid #3563e9;
+}
+
+.pe_carrossel {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-evenly;
+  transition: left 0.5s ease-out;
+}
+
+.evento {
+  display: inline-block;
+  height: 450px;
+  width: 400px;
+  background-image: url("./eventos/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin-right: 40px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.evento:hover{
+  padding: 3px;
+}
+
+.fotoEvento {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: -10px;
+}
+
+.tituloEvento {
+  display: inline-block;
+  font-size: 27px;
+  width: 235px;
+  margin-left: 20px;
+}
+
+.dataEvento {
+  display: inline-block;
+  font-size: 25px;
+  width: 110px;
+  text-align: right;
+}
+
+.detalhesEvento {
+  font-size: 17px;
+  display: inline-block;
+  margin-top: -10px;
+  list-style: none;
+}
+
+.detalhesEvento li {
+  position: relative;
+  margin-left: 0px;
+}
+
+.detalhesEvento li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 9px;
+  height: 9px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.pin {
+  height: 12px;
+  width: auto;
+  margin: 2px;
+  margin-bottom: 0px;
+}
+
+.localEvento {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  width: 270px;
+  text-align: right;
+  margin-top: -7px;
+}
+
+.amigosEvento {
+  display: inline-block;
+  font-size: 14.5px;
+  text-align: right;
+  width: 280px;
+}
+
+.botoesEvento {
+  display: flex;
+  justify-content: space-between;
+}
+
+.convideAmigos {
+  width: 80px;
+  height: 45px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #3563e9;
+  border-radius: 7px;
+  padding: 6px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.convideAmigos:hover {
+  background-color: white;
+  color: #3563e9;
+}
+
+.jaInscrito {
+  text-align: center;
+  padding: 5px;
+  width: 120px;
+  border-radius: 7px;
+  background-color: #3563e9;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.jaInscrito:hover {
+  background-color: white;
+  color: #3563e9;
+}
+
+.ttbeach {
+  font-size: 23px;
+  margin-top: 30px;
+}
+
+.lcbeach {
+  width: 180px;
+  margin-left: -40px;
+  margin-top: 0px;
+}
+
+.agbeach {
+  width: 155px;
+}
+
+.btbeach {
+  margin-top: -10px;
+}
+.dtbeach {
+  padding-right: 10px;
+  padding-top: 5px;
+  position: absolute;
+}
+.lcsparring {
+  padding-top: 10px;
+  width: 230px;
+}
+.detsparring {
+  padding-top: 0px;
+  margin-top: -20px;
+}
+.meuseventosFim {
+  font-size: 30px;
+  width: 280px;
+  padding-left: 20px;
+  padding-top: 60px;
+}
+
+.btBuscaAvancadaEventos {
+  background-color: #3563e9;
+  width: 180px;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.btBuscaAvancadaEventos:hover {
+  background-color: white;
+  color: #3563e9;
+}
+.Sugestoes {
+  margin-top: 500px;
+}
+.bora {
+  font-size: 20px;
+  width: 100px;
+  padding: 10px;
+}
+
+.btyoga {
+  justify-content: space-around;
+  margin-top: -15px;
+}
+
+.agyoga {
+  margin-top: 0px;
+  width: 220px;
+  display: inline-block;
+  padding-top: 49px;
+}
+
+.lcyoga {
+  width: 180px;
+}
+
+.ttskate {
+  font-size: 25px;
+}
+
+.dtskate {
+  position: absolute;
+  margin-top: 30px;
+}
+
+.lcskate {
+  width: 280px;
+  text-align: center;
+  margin-left: -40px;
+}
+
+.agskate {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: -50px;
+}
+
+.btskate {
+  justify-content: space-around;
+}
+
+.btsimu {
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.agsimu {
+  position: absolute;
+  margin-top: 8px;
+}
+
+.lcsimu {
+  width: fit-content;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.lcvolei {
+  margin-left: 100px;
+}
+
+.lcbaska {
+  margin-top: -20px;
+}
+
+.ttxadrez {
+  font-size: 23px;
+}
+
+.ttfutvolei {
+  font-size: 25px;
+}
+
+.lcfutvolei {
+  margin-left: 40px;
+  margin-top: -10px;
+}
+.agfutvolei {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+.btfutvolei {
+  margin-top: 10px;
+}
+
+.containerBusca {
+  position: absolute;
+
+  top: 1310px;
+  left: 100px;
+  width: 1250px;
+  background-color: white;
+  border-radius: 20px;
+  height: 800px;
+}
+
+.headbc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.bc {
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.deslize {
+  font-size: 25px;
+  color: #878787;
+  margin-left: 30px;
+}
+
+.distancia {
+  display: flex;
+
+  height: 100px;
+  justify-content: space-evenly;
+}
+.distanciatitulo {
+  font-size: 32px;
+  font-weight: 600;
+  align-items: center;
+}
+.distanciascrol {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.linhascroll {
+  width: 90%;
+  height: 3px;
+  background-color: #5eabff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bola {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #5eabff;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.final {
+  margin-left: 670px;
+}
+
+.risco {
+  border-right: 2px solid #5eabff;
+  height: 28px;
+  width: 10%;
+  transform: translateY(-43%);
+}
+.risco1 {
+  border-right: 2px solid #5eabff;
+  height: 28px;
+  width: 10%;
+  transform: translateY(-43%);
+}
+.kilometragem {
+  user-select: none;
+}
+.mexe {
+  width: 35px;
+  height: 35px;
+  background-color: #3563e9;
+  transition: all 0.2s ease;
+  cursor: grab;
+}
+
+.mexe:hover {
+  width: 40px;
+  height: 40px;
+}
+
+.mexe:active {
+  cursor: grabbing;
+}
+
+.habilidadescrol {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.categott {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+}
+
+.radiofiltro{
+  display: none;
+}
+
+.filtro {
+  display: inline-block;
+  border: 1px solid #3563e9;
+  font-size: 32px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  color: #3563e9;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.filtro:hover {
+  padding: 13px;
+}
+
+.radiofiltro:checked + label {
+  background-color: #3563e9;
+  color: white;
+}
+
+.mais{
+  font-size: 30px;
+  margin-top: 10px;
+  color: #878787;
+  cursor: pointer;
+  user-select: none;
+}
+
+.propaganda {
+  display: flex;
+  justify-content: center;
+  margin-top: 1380px;
+}
+
+.propaganda img{
+  height: 470px;
+  margin-left: 20px;
+  padding: -20px;
+}
+
+footer {
+  background-color: white;
+  height: 430px;
+  margin-top: 100px;
+}
+
+footer img{
+  height: 250px;
+}
+
+.headDofoot{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 340px;
+  user-select: none;
+}
+
+.sobres{
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  margin-left: 300px;
+}
+
+.SobreDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 160px;
+}
+
+.SobreDiv p {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.SobreDiv ul {
+  list-style: none;
+  margin-left: -40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+hr {
+  width: 95%;
+
+}
+
+.footDofoot{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  user-select: none;
+
+}
+
+.footDofoot p {
+  font-weight: 800;
+  font-size: 18px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.mC{
+  background-color: white;
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 60px;
+  height: 340px;
+  border-radius: 30px;
+  overflow-x: hidden;
+}
+
+.ttmC {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mCCarrossel {
+  list-style: none;
+  display: flex;
+  margin-left: -10px;
+  justify-content: space-evenly;
+  transition: all 0.7s ease-out;
+  width: 1900px;
+}
+
+.comunidade {
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.comunidade:hover {
+  height: 210px;
+}
+
+.likeDislike{
+  position: absolute;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+}
+
+.bA {
+  font-weight: 600;
+}
+
+.cBbA {
+  position: initial;
+  margin-left: 100px;
+}
+
+.por{
+  font-size: 30px;
+  background-color: white;
+  color: #5eabff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+
+.cat {
+  background-color: #5eabff;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: space-around;
+  transform: translatey(-50%);
+  margin-left: 20px;
+}
+
+.sk {
+  width: 90px;
+}
+
+.ub {
+  width: 120px;
+}
+
+.cat img{
+  height: 25px;
+}
+
+.ebA {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+.crbA {
+  position: initial;
+}
+
+.mCC{
+  height: 600px;
+  border-radius: 0px;
+}
+
+.mCCCarrossel{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1000px;
+  row-gap: 50px;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.ttmCC {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.sub {
+  font-size: 20px;
+  opacity: 50%;
+  transform: translate(-20%, 50%);
+
+}
+.amizade {
+  height: 300px;
+  transition: all 0.2s ease;
+}
+.amizade:hover {
+  height: 315px;
+}
+
+
+.amzmC {
+  height: 436px;
+  overflow-y: hidden;
+}
+
+.amg{
+  width: 1200px;
+  margin-left: 0px;
+}
+
+.am {
+  margin-top: 80px;
+}
+
+.imagemsobre {
+  width: 80%;
+  margin-left: 150px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.fundobranco {
+  background-color: white;
+}
+
+.evdet{
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px; 
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease; 
+  z-index: 20;
+}
+
+.sidebar.open {
+  left: 0; 
+}
+
+.setaesquerda {
+  height: 40px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.sidebar li {
+  border-left: 2px solid white;
+  padding-left: 10px;
+  cursor: pointer;
+}
